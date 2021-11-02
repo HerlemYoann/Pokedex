@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'pokemon';
+  src: 
+        url('../police/Pokemon\ Solid.ttf') format('truetype');
+    
+}
+
+body{
+    background-image: url('../images/pokemonFond.png');
+}
+
+.titre {
+    text-align: center;
+}
+
+#logo {
+    animation: 1s cubic-bezier(0.4, 0, 1, 1)  infinite alternate petit;
+}
+
+
+.Pokedex{
+    margin-top: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+   
+}
+
+
+.Pokedex li{
+transition: 0.3s;
+list-style: none;
+width: 25%;
+}
+
+.Pokedex li:hover{
+    transform: scale(1.3);
+    transition: 0.3s;
+}
+
+.Pokedex a {
+    text-decoration: none;
+    font-size: 4em; 
+    font-family:'pokemon'; 
+    color: #2f6db5;
+        text-shadow:
+        #FFCC03 1px 1px 1px,
+        #FFCC03 -1px 1px 1px,
+        #FFCC03 -1px -1px 1px,
+        #FFCC03 1px -1px 1px;
+
+}
+
+
+@keyframes petit{
+    from{
+        transform: translateY(0);
+    }
+
+    to{
+        transform: translateY(100px);
+    }
+}

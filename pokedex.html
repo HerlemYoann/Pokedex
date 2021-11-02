@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!--Fin Bootstrap-->
+    <link rel="stylesheet" href="./css/stylePokedex.css">
+    <script src="https://kit.fontawesome.com/c0958d1a1c.js" crossorigin="anonymous"></script>
+    
+    <title>Pokedex</title>
+</head>
+<body>
+    <div class="titre">
+       <a href="index.html"> <img src="./images/1200px-International_Pokémon_logo.svg.png" alt="pokemon" id="logo" width="10%" ></a>
+    </div>
+    <main>
+        <h1>Pokédex</h1>
+
+ <div class="container">
+
+  <div id="Nombre_de_pokemon_capture">
+    Nombre de Pokemon capturé: 0
+  </div>
+     <div class="row justify-content-center liste_pokedex">
+  
+
+         <div class="card disabled " style="width: 18rem;" id="Bulbizarre" >
+           <img src="./images/bulbizarre.png" class="card-img-top" alt="bulbizarre"  >
+           <div class="card-body">
+             <h5 class="card-title">Bulbizarre</h5>
+             <div id="plante">
+              <p class="type col-lg-5" ><i class="fas fa-leaf"></i>Plante</p>             
+            </div>             
+             <a class="btn btn-primary" id="supprimerBulbizarre">Pas Capturé</a>
+             <button type="button" class="btn btn-info"  onclick="afficherCardBulbizarre()">Détail</button>
+           </div>
+         </div>
+
+        <div class="card disabled " style="width: 18rem;" id="Herbizarre" >
+            <img src="./images/herbizarre.png" class="card-img-top" alt="herbizarre">
+            <div class="card-body">
+              <h5 class="card-title">Herbizarre</h5>
+              <div id="plante">
+                <p class="type col-lg-5"><i class="fas fa-leaf"></i>Plante</p>             
+              </div>
+              <a class="btn btn-primary" id="supprimerHerbizarre">Pas Capturé</a>
+              <button type="button" class="btn btn-info" onclick="afficherCardHerbizarre()">Détail</button>              
+            </div>
+          </div>
+          
+          
+          <div class="card disabled" style="width: 18rem;"  id="Florizarre">
+            <img src="./images/Florizarre.png" class="card-img-top" alt="Florizarre">
+            <div class="card-body">
+              <h5 class="card-title">Florizarre</h5>
+              <div id="plante">
+                <p class="type col-lg-5"><i class="fas fa-leaf"></i>Plante</p>             
+              </div>
+              <a class="btn btn-primary" id="supprimerFlorizarre">Pas Capturé</a>
+              <button type="button" class="btn btn-info" onclick="afficherCardFlorizarre()">Détail</button>
+            </div>
+          </div>
+          
+          <div class="card disabled" style="width: 18rem;" id="Salameche" >
+            <img src="./images/Salameche.png" class="card-img-top" alt="Salameche">
+            <div class="card-body">
+              <h5 class="card-title">Salameche</h5>
+              <div id="Feu">
+                <p class="typeF col-lg-5"><i class="fas fa-fire"></i></i>Feu</p>             
+              </div>
+              <a class="btn btn-primary" id="supprimerSalameche">Pas Capturé</a>
+              <button type="button" class="btn btn-info"  onclick="afficherCardSalameche()">Détail</button>
+            </div>
+          </div>
+          
+          <div class="card disabled" style="width: 18rem;" id="Reptincel" >
+            <img src="./images/Reptincel.png" class="card-img-top" alt="Reptincel">
+            <div class="card-body">
+              <h5 class="card-title">Reptincel</h5>
+              <div id="Feu">
+                <p class="typeF col-lg-5"><i class="fas fa-fire"></i>Feu</p>             
+              </div>
+              <a class="btn btn-primary" id="supprimerReptincel">Pas Capturé</a>
+              <button type="button" class="btn btn-info"  onclick="afficherCardReptincel()">Détail</button>
+            </div>
+          </div>
+          
+          <div class="card disabled" style="width: 18rem;" id="Dracaufeu" >
+            <img src="./images/Dracaufeu.png" class="card-img-top" alt="Dracaufeu">
+            <div class="card-body">
+              <h5 class="card-title">Dracaufeu</h5>
+              <div id="Feu">
+                <p class="typeF col-lg-5"><i class="fas fa-fire"></i>Feu</p>             
+              </div>
+              <a class="btn btn-primary" id="supprimerDracaufeu">Pas Capturé</a>
+              <button type="button" class="btn btn-info" onclick="afficherCardDracaufeu()">Détail</button>
+            </div>
+          </div>
+          
+          <div class="card disabled" style="width: 18rem;" id="Carapuce" >
+            <img src="./images/Carapuce.png" class="card-img-top" alt="Carapuce">
+            <div class="card-body">
+              <h5 class="card-title">Carapuce</h5>
+              <div id="Eau">
+                <p class="typeE col-lg-5"><i class="fas fa-tint"></i>Eau</p>             
+              </div>
+              <a class="btn btn-primary" id="supprimerCarapuce">Pas Capturé</a>
+              <button type="button" class="btn btn-info"  onclick="afficherCardCarapuce()">Détail</button>
+            </div>
+          </div>
+          
+          <div class="card disabled" style="width: 18rem;"id="Carabaffe"  >
+            <img src="./images/Carabaffe.png" class="card-img-top" alt="Carabaffe">
+            <div class="card-body">
+              <h5 class="card-title">Carabaffe</h5>
+              <div id="Eau">
+                <p class="typeE col-lg-5"><i class="fas fa-tint"></i>Eau</p>             
+              </div>
+              <a  class="btn btn-primary " id="supprimerCarabaffe" >Pas Capturé</a>
+              <button type="button" class="btn btn-info"  onclick="afficherCardCarabaffe()">Détail</button>
+            </div>
+          </div>
+          
+          <div class="card disabled" style="width: 18rem;" id="Tortank" >
+            <img src="./images/Tortank.png" class="card-img-top" alt="Tortank">
+            <div class="card-body">
+              <h5 class="card-title">Tortank</h5>
+              <div id="Eau">
+                <p class="typeE col-lg-5"><i class="fas fa-tint"></i></i>Eau</p>             
+              </div>
+              <a class="btn btn-primary" id="supprimerTortank" >Pas Capturé</a>
+              <button type="button" class="btn btn-info"  onclick="afficherCardTortank()">Détail</button>
+            </div>
+          </div>
+          
+          <div class="modal" id="CardTortank">
+            <div class="modal-title Eau">
+              <i class="fas fa-times" onclick="afficherCardTortank()"></i> <p>Tortank</p>
+            </div>
+            <div class="modal-content">
+              <img src="./images/Tortank.png" alt="Tortank">
+                <p>Tortank est un bipède massif de la famille des tortues. Les extrémités supérieures gauche et droite de sa carapace sont ornées d'un canon à eau pouvant être orienté dans diverses directions. Formé au combat, sa tête s'est endurcie : le duvet de Carabaffe n'est plus présent et il possède désormais deux petites oreilles et une queue courte. Ses griffes se sont maintenant développées sur tous ses doigts et ses yeux n'ont pas changé de couleur.</p>
+            </div>
+        </div>
+
+        <div class="modal" id="CardCarabaffe">
+          <div class="modal-title Eau">
+            <i class="fas fa-times" onclick="afficherCardCarabaffe()"></i> <p>Carabaffe</p>
+          </div>
+          <div class="modal-content">
+            <img src="./images/Carabaffe.png" alt="Carabaffe">
+              <p>Carabaffe est une tortue bipède de couleur bleu indigo, dont la queue et les oreilles sont recouvertes d'une fourrure duveteuse de couleur blanche. Ses grands yeux sont marron. Trois griffes ornent chacune de ses pattes, et une épaisse carapace le protège des coups.
+                Carabaffe est fait pour le combat : des canines affleurent sur ses lèvres, sa queue peut administrer de puissantes volées de coups et ses pattes robustes lui permettent de résister aux chocs. Il semble pouvoir nager extrêmement vite, notamment à l'aide de ses oreilles et de sa queue.</p>
+          </div>
+      </div>
+
+        <div class="modal" id="CardCarapuce">
+          <div class="modal-title Eau">
+            <i class="fas fa-times" onclick="afficherCardCarapuce()"></i> <p>Carapuce</p>
+          </div>
+          <div class="modal-content">
+            <img src="./images/Carapuce.png" alt="Carapuce">
+            <p>Carapuce est une petite tortue bipède de couleur bleue. Il possède une carapace majoritairement brune, jaune pâle au niveau du ventre. Ses yeux sont grands et violacés. Il a une queue avec un motif de spirale à son extrémité. Il possède quatre pattes avec chacune trois doigts.
+
+              Sa carapace, molle à la naissance, durcit avec le temps et lui sert à se protéger pour lancer ensuite des jets d'eau ou d'écume, mais aussi à améliorer son hydrodynamisme.</p>
+          </div>
+      </div>
+
+        <div class="modal" id="CardDracaufeu">
+          <div class="modal-title Feu">
+            <i class="fas fa-times" onclick="afficherCardDracaufeu()"></i><p>Dracaufeu</p>
+          </div>
+          <div class="modal-content">
+            <img src="./images/Dracaufeu.png" alt="Dracaufeu">
+            <p>Dracaufeu est basé sur un dragon européen. Contrairement à ses pré-évolutions, il a deux ailes lui permettant de voler : l'intérieur des ailes est bleu alors que leur verso est orange. Ses membres supérieurs se sont atrophiés tandis que sa queue s’est allongée pour permettre à ce titan de garder une certaine stabilité au sol bien qu'il soit plus à l'aise dans les airs.Pokémon noble, il n'attaque pas les plus faibles que lui et cherche toujours des adversaires plus forts. Après un combat difficile ou s'il est en colère, sa flamme s'intensifie et devient blanc-bleu.</p>
+          </div>
+      </div>
+
+        <div class="modal" id="CardReptincel">
+          <div class="modal-title Feu">
+            <i class="fas fa-times" onclick="afficherCardReptincel()"></i> <p>Reptincel</p>
+          </div>
+          <div class="modal-content">
+            <img src="./images/Reptincel.png" alt="Reptincel">
+            <p>Reptincel est tiré du dinosaure ; il possède de grandes et puissantes griffes acérées, qui l'aident notamment à déchirer la peau de ses ennemis lors des combats. Sa peau est devenue plus foncée et son museau s’est allongé. Son crâne est désormais doté d'une crête. Sa queue, longue et terminée par une flamme, lui sert notamment à élever sa température, le rendant plus puissant en combat, et à faire chuter ses adversaires avant de les achever.</p>
+          </div>
+      </div>
+
+        <div class="modal" id="CardSalameche">
+          <div class="modal-title Feu">
+            <i class="fas fa-times" onclick="afficherCardSalameche()"></i><p>Salameche</p> 
+          </div>
+          <div class="modal-content">
+            <img src="./images/Salameche.png" alt="Salameche">
+            <p>Salamèche est un Pokémon bipède et reptilien avec un corps orange tandis que son ventre et la plante de ses pieds sont jaunes. Ses bras et ses jambes sont courts, avec respectivement quatre doigts et trois griffes chacune. Une flamme brûle au bout de la svelte queue de Salamèche, et elle flamboie depuis sa naissance. La flamme peut servir d'indication quant à la santé et à l'humeur de Salamèche : elle brûle fièrement quand le Pokémon est en pleine forme, doucement si le Pokémon est faible ou triste, ondoie quand il est heureux et flamboie quand il est en colère.</p>
+          </div>
+      </div>
+
+        <div class="modal" id="CardFlorizarre">
+          <div class="modal-title Plante">
+            <i class="fas fa-times" onclick="afficherCardFlorizarre()"></i>  <p>Florizarre</p>
+          </div>
+          <div class="modal-content">
+            <img src="./images/Florizarre.png" alt="Florizarre">
+            <p> Il porte une grande fleur sur son dos, entourée de quatre grandes feuilles. L’intérieur de ses oreilles s'est coloré de rouge et sa peau au niveau de ses pattes est désormais recouverte d'excroissances faisant penser aux verrues d'un crapaud.Chacun de ses pas provoque un tremblement du sol. Sa fleur émet un parfum qui calme les esprits et appâte les Pokémon. Ce parfum est plus entêtant après une journée de pluie. La fleur permet aussi à Florizarre d'absorber les rayons du soleil pour se soigner ou être plus efficace en combat.</p>
+          </div>
+      </div>
+
+        <div class="modal" id="CardHerbizarre">
+          <div class="modal-title Plante">
+            <i class="fas fa-times" onclick="afficherCardHerbizarre()"></i><p>Herbizarre</p>
+          </div>
+          <div class="modal-content">
+            <img src="./images/herbizarre.png" alt="Herbizarre">
+            <p>Herbizarre est un Pokémon quadrupède, semblable à un dinosaure. Il a un corps bleu vert, avec des taches plus foncées. Deux dents pointues proviennent de sa mâchoire supérieure, et ses yeux se sont rétrécis et sont devenus pourpres. Il a un petit museau rond et une large bouche. Chacun de ses pieds possède trois griffes. Le bulbe sur son dos a fleuri et est devenu un gros bourgeon rose dont le poids est tel qu'il empêche Herbizarre de se tenir sur ses pattes postérieures trop longtemps. Une petite tige marron, entourée par quatre larges feuilles, soutient le bourgeon.</p>
+          </div>
+      </div>
+
+        <div class="modal" id="CardBulbizarre">
+          <div class="modal-title Plante" >
+            <i class="fas fa-times" onclick="afficherCardBulbizarre()"></i> <p>Bulbizarre</p>
+          </div>
+          <div class="modal-content">
+            <img src="./images/bulbizarre.png" alt="bulbizarre">
+            <p>Bulbizarre est un petit quadrupède vert avec une tête large. Il porte un bulbe sur son dos. Ce dernier lui sert également d'organe de stockage, puisqu’on rapporte notamment qu’en période de sécheresse, il peut survivre plusieurs jours sans manger grâce à l’énergie qui y est accumulée. Son bulbe grandit en permanence en absorbant les rayons du soleil, et lorsque le poids du bulbe sera trop grand et empêchera Bulbizarre de se dresser sur ses deux pattes arrière, cela signifiera que son évolution en Herbizarre est proche.</p>
+          </div>
+      </div>
+
+
+
+      
+
+          
+     </div>
+ </div>
+
+    </main>
+    
+
+     <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+
+    <script src="javascript.js"></script>
+</body>
+</html>

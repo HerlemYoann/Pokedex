@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'pokemon';
+    src: 
+          url('../police/Pokemon\ Solid.ttf') format('truetype');
+      
+  }
+  
+  body{
+      background: url('../images/pokemonFond.png') no-repeat fixed;
+  }
+
+  h1{
+      font-family: 'pokemon';
+      font-size: 4em;
+      text-align: center;
+      margin: 1.5em;
+      color: #2f6db5;
+      text-shadow:
+      #FFCC03 1px 1px 1px,
+      #FFCC03 -1px 1px 1px,
+      #FFCC03 -1px -1px 1px,
+      #FFCC03 1px -1px 1px;
+
+  }
+  
+
+.card{
+    margin: 15px;
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.liste_pokedex:hover .card:not(:hover){
+    opacity: 0.5;
+}
+
+.type{
+    border: 1px solid;
+    background: green;
+    color: white;
+}
+
+.typeF{
+    border: 1px solid;
+    background: orangered;
+    color: white;
+}
+
+.typeE{
+    border: 1px solid;
+    background: rgb(35, 109, 134);
+    color: white; 
+}
+
+.card-title{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+.disabled {
+    filter:grayscale(100%);
+    cursor: default;
+}
+
+#Nombre_de_pokemon_capture{
+    margin: 25px;
+    font-size: 1.3em;
+    font-family: 'pokemon';
+    color: #FFCC03;
+    text-shadow:
+        #2f6db5 1px 1px 1px,
+        #2f6db5 -1px 1px 1px,
+        #2f6db5 -1px -1px 1px,
+        #2f6db5 1px -1px 1px;
+    
+}
+
+.modal {
+    background: snow;
+    text-align: center;
+    width: 480px;
+    height: 450px;
+    position: fixed;
+    top: 25%;
+    left: auto;
+    display: none;
+}
+
+.modal-content img{
+    
+    width:50%;
+    margin: auto;
+   
+}
+
+.modal-title{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.modal-content{
+    font-size: 13px;
+}
+
+.modal.active {
+    display: block;
+    transition: 0.3s;
+}
+
+.modal-active {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.fas{
+    cursor: pointer;
+}
+
+.Feu{
+    background: orangered;
+}
+.Eau{
+    background: rgb(35, 109, 134);
+}
+.Plante{
+    background: green;
+}
